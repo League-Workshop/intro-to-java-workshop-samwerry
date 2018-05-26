@@ -1,4 +1,4 @@
-package section3;
+package section3; 
 
 import javax.swing.JOptionPane;
 
@@ -9,13 +9,16 @@ public class SpeakAndSpell {
 
 	public static void main(String[] args) {
 		// 1. Use the speak method to say the word. "e.g. spell mandlebrot"
-
+speak(" spell madlebrot");
 		// 2. Catch the user's answer in a String
-
+String sam = JOptionPane.showInputDialog("spell madlebrot");
 		// 3. If the user spelled the word correctly, speak "correct"
-
-		// 4. Otherwise say "wrong"
-
+if(sam.equals("madlebrot")) {
+	JOptionPane.showMessageDialog(null, "correct");
+}
+		
+// 4. Otherwise say "wrong"
+else {JOptionPane.showMessageDialog(null, "wrong"); }
 		// 5. repeat the process for other words
 		
 	}
